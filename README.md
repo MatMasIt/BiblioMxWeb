@@ -2,7 +2,7 @@
 
 
 
-> Not official and not 
+> Not official and not endorsed by Micla Multimedia Onlus
 
 A system to extract data from a [BiblioMx](http://www.micla.org/freeware/bibliomx.html) system and display it on the Internet in a searchable fashion, trough a semi-automatic process
 
