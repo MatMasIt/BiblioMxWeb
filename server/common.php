@@ -35,4 +35,4 @@ function base64url_decode($data, $strict = false)
   return base64_decode($b64, $strict);
 }
 
-$GLOBALS["place"]="Liceo Scientifico Statale \"L.Cocito\"";
+$GLOBALS["place"]="Biblioteca xyz";
