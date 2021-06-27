@@ -13,7 +13,9 @@ A system to extract data from a [BiblioMx](http://www.micla.org/freeware/bibliom
 
 ## Preamble
 
-BiblioMx, despite being a pretty common library management software, saves data in custom binary files, and only allows to export data to CSV.
+BiblioMx, despite being a pretty common library management software, saves data in custom binary files, and only allows exporting data to CSV.
+
+This approach greatly limits the possibility of accessing and querying data through means other than the desktop program itself.
 
 This is the major limitation that this project tries to address.
 
