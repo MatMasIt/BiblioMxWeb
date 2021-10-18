@@ -1,6 +1,6 @@
 # BiblioMxWeb
 
-
+![GitHub](https://img.shields.io/github/license/MatMasIt/BiblioMxWeb)
 
 > Not official and not endorsed by Micla Multimedia Onlus
 
