@@ -35,4 +35,7 @@ function base64url_decode($data, $strict = false)
   return base64_decode($b64, $strict);
 }
 
-$GLOBALS["place"]="Biblioteca xyz";
+
+$GLOBALS["place"] = "Liceo Scientifico Statale \"L.Cocito\"";
+$GLOBALS["availability"] = false;
+$GLOBALS["imageISBNCache"] = 60*60*24*100;
