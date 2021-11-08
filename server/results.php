@@ -71,7 +71,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Titolo LIKE ('%' || :Titolo || '%')";
+                  $query .= " trim(lower(Titolo)) LIKE ('%' || trim(lower(:Titolo)) || '%')";
                   $arrayQ[":Titolo"] = $_POST["Titolo"];
                 }
                 if (!empty($_POST["Letter"])) {
@@ -80,7 +80,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Titolo LIKE (:Letter || '%')";
+                  $query .= " trim(lower(Titolo)) LIKE ( trim(lower(:Letter)) || '%')";
                   $arrayQ[":Letter"] = $_POST["Letter"];
                 }
                 if (!empty($_POST["Autore"])) {
@@ -89,7 +89,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Autore LIKE ('%' || :Autore || '%')";
+                  $query .= " trim(lower(Autore)) LIKE ('%' || trim(lower(:Autore)) || '%')";
                   $arrayQ[":Autore"] = $_POST["Autore"];
                 }
                 if (!empty($_POST["Editore"])) {
@@ -98,7 +98,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Editore LIKE ('%' || :Editore || '%')";
+                  $query .= " trim(lower(Editore)) LIKE ('%' || trim(lower(:Editore)) || '%')";
                   $arrayQ[":Editore"] = $_POST["Editore"];
                 }
                 if (!empty($_POST["Genere"])) {
@@ -107,7 +107,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Genere LIKE ('%' || :Genere || '%')";
+                  $query .= " trim(lower(Genere)) LIKE ('%' || trim(lower(:Genere)) || '%')";
                   $arrayQ[":Genere"] = $_POST["Genere"];
                 }
                 if (!empty($_POST["ISBN"])) {
@@ -116,7 +116,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " ISBN LIKE ('%' || :ISBN || '%')";
+                  $query .= " trim(lower(ISBN)) LIKE ('%' || trim(lower(:ISBN)) || '%')";
                   $arrayQ[":ISBN"] = $_POST["ISBN"];
                 }
                 if (!empty($_POST["Inventario"])) {
@@ -125,7 +125,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Inventario LIKE ('%' || :Inventario || '%')";
+                  $query .= " trim(lower(Inventario)) LIKE ('%' || trim(lower(:Inventario)) || '%')";
                   $arrayQ[":Inventario"] = $_POST["Inventario"];
                 }
                 if (!empty($_POST["Serie"])) {
@@ -134,7 +134,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Serie LIKE ('%' || :Serie || '%')";
+                  $query .= " trim(lower(Serie)) LIKE ('%' || trim(lower(:Serie)) || '%')";
                   $arrayQ[":Serie"] = $_POST["Serie"];
                 }
                 if (!empty($_POST["Lingua"])) {
@@ -143,7 +143,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Lingua LIKE ('%' || :Lingua || '%')";
+                  $query .= "trim(lower(Lingua)) LIKE ('%' || trim(lower(:Lingua)) || '%')";
                   $arrayQ[":Lingua"] = $_POST["Lingua"];
                 }
                 if (!empty($_POST["Argomento"])) {
@@ -152,7 +152,7 @@ function main($pdo, $pageN)
                   } else {
                     $query .= " AND ";
                   }
-                  $query .= " Argomento LIKE ('%' || :Argomento || '%')";
+                  $query .= " trim(lower(Argomento)) LIKE ('%' || trim(lower(:Argomento)) || '%')";
                   $arrayQ[":Argomento"] = $_POST["Argomento"];
                 }
                 if ($_POST["Prestito"] == "P") {
@@ -334,6 +334,6 @@ function main($pdo, $pageN)
 <?php
 }
 
-$dbh = new PDO('sqlite:db');
+$dbh = new PDO('sqlite:2/db');
 main($dbh, $_POST["page"] ?: 0);
 ?>
