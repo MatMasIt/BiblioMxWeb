@@ -1,5 +1,6 @@
 <?php
 require("common.php");
+require("isbnImage.php");
 function main($pdo, $pageN)
 {
 
@@ -72,6 +73,15 @@ function main($pdo, $pageN)
                   }
                   $query .= " Titolo LIKE ('%' || :Titolo || '%')";
                   $arrayQ[":Titolo"] = $_POST["Titolo"];
+                }
+                if (!empty($_POST["Letter"])) {
+                  if (!$flag) {
+                    $flag = true;
+                  } else {
+                    $query .= " AND ";
+                  }
+                  $query .= " Titolo LIKE (:Letter || '%')";
+                  $arrayQ[":Letter"] = $_POST["Letter"];
                 }
                 if (!empty($_POST["Autore"])) {
                   if (!$flag) {
@@ -183,6 +193,7 @@ function main($pdo, $pageN)
                   }
                 ?>
                   <div class="resultD w3-panel w3-card">
+               <img src="<?php echo isbnImage($data["ISBN"]); ?>" style="width:10vw;" />
                     <table>
                       <tr>
                         <th>Titolo</th>
