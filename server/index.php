@@ -138,7 +138,9 @@ function main($pdo)
                   </div>
 
                   <div class="w3-row">
-
+			<?php
+            if($GLOBALS["availability"]){
+            ?>
                     <p class="w3-third"><label>In prestito</label>
                       <select class="w3-select" name="Prestito"> 
                       <option value="P">Sì</option>
@@ -146,6 +148,9 @@ function main($pdo)
                       <option selected value="IGNORE">Ignora</option>
                       </select>
                     </p>
+            <?php
+            }
+            ?>
 
                     <p class="w3-third"><label>Dewey</label>
                       <input class="w3-input w3-border" name="first" type="Dewey">
@@ -166,23 +171,7 @@ function main($pdo)
               </div>
 
 
-              <!--
-              <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-newspaper-o fa-fw w3-margin-right"></i>Notizie</button>
-              <div id="Demo2" class=" w3-hide w3-container">
-                <h4>Titolo</h4>
-                <h3>Autore</h3>
-                Dfsfdf
-                <hr />
-                <h4>Titolo</h4>
-                <h3>Autore</h3>
-                Dfsfdf
-                <hr />
-                <h4>Titolo</h4>
-                <h3>Autore</h3>
-                Dfsfdf
               
-              </div>
--->
             </div>
           </div>
           <br>
