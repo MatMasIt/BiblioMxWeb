@@ -1,5 +1,6 @@
 <?php
 require("common.php");
+require("isbnImage.php");
 function bookDisplay($pdo, $id)
 {
   
@@ -61,7 +62,17 @@ function bookDisplay($pdo, $id)
           <div class="w3-card w3-round w3-white">
             <div class="w3-container">
               <h4 class="w3-center"><?php echo htmlentities($data["Titolo"]); ?></h4>
-              <center><img style="width:10vw" src="books.png" /></center>
+              <?php 
+                 $image = isbnImage($data["ISBN"]);
+              ?>
+              <center><a href="<?php 
+                 if($image=="books.png"){
+                 	echo "#";
+                 }
+                 else{
+                 	echo $image;
+                 }
+              ?>"><img style="width:10vw" src="<?php echo $image; ?>" /></a></center>
               <hr>
               <?php
               if ($data["Autore"]) {
@@ -99,6 +110,7 @@ function bookDisplay($pdo, $id)
           <div class="w3-card w3-round">
             <div class="w3-white">
               <?php
+            if($GLOBALS["availability"]){
               if ($data["Prestito"] == "P") {
               ?>
                 <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align" style="background-color:red!important"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> In prestito</button>
@@ -113,6 +125,7 @@ function bookDisplay($pdo, $id)
                   <p>Il libro risulta essere disponibile al prestito in base agli ultimi dati disponibili</p>
                 </div>
               <?php
+              }
               }
               ?>
 
