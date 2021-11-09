@@ -1,7 +1,7 @@
 <?php
 function cache_get($isbn){
-	if(!file_exists("2/isbnCacheImg.json")) return false;
-	$data = json_decode(file_get_contents("2/isbnCacheImg.json"),true);
+	if(!file_exists("isbnCacheImg.json")) return false;
+	$data = json_decode(file_get_contents("isbnCacheImg.json"),true);
     if(!$data) return false;
     $res = $data[$isbn];
     if(!$res) return false;
@@ -10,7 +10,7 @@ function cache_get($isbn){
 }
 function cache_set($isbn,$url){
 	if(file_exists("2/isbnCacheImg.json")){
-    	$data = json_decode(file_get_contents("2/isbnCacheImg.json"),true)?:[];
+    	$data = json_decode(file_get_contents("isbnCacheImg.json"),true)?:[];
     }
     else{
     	$data = [];
