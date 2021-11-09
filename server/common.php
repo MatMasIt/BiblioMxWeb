@@ -39,3 +39,4 @@ function base64url_decode($data, $strict = false)
 $GLOBALS["place"] = "Liceo Scientifico Statale \"L.Cocito\"";
 $GLOBALS["availability"] = false;
 $GLOBALS["imageISBNCache"] = 60*60*24*100;
+$GLOBALS["repoUrl"] = "https://github.com/MatMasIt/BiblioMxWeb";
