@@ -163,10 +163,13 @@ function main($pdo)
                   </div>
 
                   <button class="w3-btn w3-right w3-blue-grey"><i class="fa fa-search fa-fw w3-margin-right"></i>Interroga</button>
-                  <br />
-                  <br />
+                 
                 </form>
-
+                <form method="POST" action="results.php">
+                <button class="w3-btn w3-left w3-blue-grey"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia catalogo</button>
+                </form>
+				<br />
+                  <br />
 
               </div>
 
@@ -198,7 +201,7 @@ function main($pdo)
     </footer>
 
     <footer class="w3-container w3-theme-d5">
-      <p>Repo <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">github</a></p>
+      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a></p>
     </footer>
 
     <script>
