@@ -409,6 +409,6 @@ function main($pdo, $pageN)
 <?php
 }
 
-$dbh = new PDO('sqlite:2/db');
+$dbh = new PDO('sqlite:db');
 main($dbh, $_POST["page"] ?: 0);
 ?>
