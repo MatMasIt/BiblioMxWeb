@@ -4,16 +4,10 @@ require("isbnImage.php");
 function bookDisplay($pdo, $id)
 {
   
-/*  if(isset($_GET["duid"])){
-    $ex=base64url_decode($_GET["duid"]);
-    $stmt = $pdo->prepare("SELECT * FROM Libri WHERE Titolo=:titolo AND ISBN=:isbn");
- 
-    $stmt->execute([":isbn"=>$ex]);//TODO
-  }
-  else{*/
+
     $stmt = $pdo->prepare("SELECT * FROM Libri WHERE id=:id");
   $stmt->execute([':id' => $id]);
- // }
+
   $data = $stmt->fetch();
   $ak=array_keys($data);
   for($i=0;$i<count($ak);$i++){
@@ -193,7 +187,7 @@ function bookDisplay($pdo, $id)
     </footer>
 
     <footer class="w3-container w3-theme-d5">
-      <p>Repo <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">github</a></p>
+      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a></p>
     </footer>
 
     <script>
