@@ -63,7 +63,9 @@ function main($pdo, $pageN)
               <div id="Demo1" class="w3-hide w3-container">
                 <?php
                 $arrayQ = [];
-                $query = "SELECT id,Titolo,Autore,ISBN FROM Libri WHERE";
+                $mainQuery = "SELECT id,Titolo,Autore,ISBN FROM Libri WHERE ";
+                $lQuery = " SELECT DISTINCT upper(SUBSTR(Titolo,1,1)) AS letter FROM Libri";
+                $query = "";
                 $flag = false;
                 if (!empty($_POST["Titolo"])) {
                   if (!$flag) {
@@ -183,7 +185,80 @@ function main($pdo, $pageN)
                 if (!$flag) $query .= " 1=1";
                 $query .= " ORDER BY Titolo ASC";
                 $query .= " LIMIT " . (10) . " OFFSET " . ($pageN * 10);
-                $stmt = $pdo->prepare($query);
+                $mainQuery .= $query;
+                $stmt = $pdo->prepare($lQuery);
+                $stmt->execute();
+                ?>
+                <div class="resultD w3-panel w3-card">
+                
+                <?php
+                $test = $_POST;
+                unset($test["Letter"]);
+                unset($test["page"]);
+                unset($test["first"]);
+                $test["Numero di Pagine"] = $test["NPag"];
+                unset($test["NPag"]);
+                
+                if(count($test)){
+                ?>
+                <p>Parametri di ricerca</p>
+                  <table class="w3-table w3-bordered">
+                  <thead>
+                  <tr>
+                  <?php
+                   foreach(array_keys($test) as  $key){
+                   		if(!strlen($test[$key])) continue;
+                		echo "<th>".htmlentities($key)."</th>";
+                  }
+                  ?>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                  <?php
+                   foreach(array_values($test) as  $val){
+                   		if(!strlen($val)) continue;
+                		echo "<td>".htmlentities($val)."</td>";
+                  }
+                  ?>
+                  </tr>
+                </tbody>
+                </table>
+                <br /><br />
+                <form method="POST" action="results.php">
+                <button class="w3-btn w3-left w3-orange"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia senza restrizioni</button>
+                </form>
+                </div>
+                <div class="resultD w3-panel w3-card">
+                <?php
+                }
+                ?>
+                    <form method="POST" style="display:inline;">
+                    <input type="hidden" name="Letter" value="" />                                                                                         
+                    <button class="w3-btn w3-red">&times;</button>
+                    </form>&nbsp;&nbsp;
+                <?php
+                while ($data = $stmt->fetch()) {
+                	$letter = $data["letter"];
+                    ?>
+                    <form method="POST" style="display:inline;">
+                     <?php
+                     $p = $_POST["page"];
+                     unset($_POST["page"]);
+                        foreach ($_POST as $key => $val) {
+                        ?><input type="hidden" name="<?php echo htmlentities($key); ?>" value="<?php echo htmlentities($val); ?>" /><?php
+                                                                                                                                  }
+                    ?>
+                    <input type="hidden" name="Letter" value="<?php echo htmlentities($letter); ?>" />                                                                                         
+                    <button class="w3-btn w3-blue-grey"><?php echo htmlentities($letter); ?></button>
+                    </form>
+                    <?php
+                    $_POST["page"] = $p;
+                }
+                ?>
+                </div>
+                <?php
+                $stmt = $pdo->prepare($mainQuery);
                 $stmt->execute($arrayQ);
                 $i = 0;
                 while ($data = $stmt->fetch()) {
@@ -298,7 +373,7 @@ function main($pdo, $pageN)
     </footer>
 
     <footer class="w3-container w3-theme-d5">
-      <p>Repo <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">github</a></p>
+      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a></p>
     </footer>
 
     <script>
