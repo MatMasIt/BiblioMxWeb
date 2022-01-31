@@ -25,10 +25,10 @@ def upload(csvPath):
     global serverurl
     global auth
     vprint("Generating nonce uuid")
-    uid = uuid.uuid4()
+    uid = str(uuid.uuid4())
     content_path = csvPath
     content_size = os.stat(content_path).st_size 
-    print(content_name, content_path, content_size)
+    print(content_path, content_size)
   
     file_object = open(content_path, "rb")
     index = 0
