@@ -14,32 +14,42 @@ def vprint(data):
     global verbose
     if verbose:
         print(data)
+# HERE IS OUR GENERATOR 
+def read_in_chunks(file_object, CHUNK_SIZE=1024):
+    while True:
+        data = file_object.read(CHUNK_SIZE)
+        if not data:
+            break
+        yield data        
 def upload(csvPath):
     global serverurl
     global auth
     vprint("Generating nonce uuid")
-    uid=str(uuid.uuid4())
-    data=auth+"\n"+uid+"\nBEGIN"
-    requests.post(serverurl, data=data)
-    vprint("Sent BEGIN")
-    accumulator=""
-    index=0
-    for line in open(csvPath):
-        if index==0:
-            data=auth+"\n"+uid+"\nWRITE\n"
-            accumulator=data
-        accumulator+=line
-        index+=1
-        if index>chunkRowNum:
-            vprint("Sent WRITE")
-            requests.post(serverurl, data=accumulator)
-            index=0
-    requests.post(serverurl, data=accumulator)
-    vprint("Sent WRITE")
-    data=auth+"\n"+uid+"\nCONCLUDE"
-    requests.post(serverurl, data=data)
-    vprint("Sent CONCLUDE")
-            
+    uid = uuid.uuid4()
+    content_name = str(csvPath)
+    content_path = os.path.abspath(file)
+    content_size = os.stat(content_path).st_size 
+    print(content_name, content_path, content_size)
+  
+    file_object = open(content_path, "rb")
+    index = 0
+    offset = 0
+    headers = {}
+  
+    for chunk in read_in_chunks(file_object, CHUNK_SIZE):
+        offset = index + len(chunk)
+        headers['Content-Range'] = 'bytes %s-%s/%s' % (index, offset - 1, content_size) 
+        headers['Authorization'] = auth
+        headers['X-Nonce'] = uid
+        index = offset 
+        try: 
+        
+            file = {"file": chunk}
+            r = requests.post(serverUrl, files=file, headers=headers)
+            print(r.text)
+            print("r: %s, Content-Range: %s" % (r, headers['Content-Range'])) 
+        except Exception as e:
+            print(e)
 if not storage.exists("lastUpdate"):
     vprint("Last database update record has been initialized")
     storage.save("lastUpdate",0)
