@@ -20,7 +20,7 @@ $nonce = md5($headers["X-Nonce"]);
 $intent = $headers["X-Intent"];
 switch($intent){
 	case "W":
-	    file_put_contents("data/".$nonce.".csv",FILE_APPEND);
+	    file_put_contents("data/".$nonce.".csv",$f,FILE_APPEND);
 		break;
 	case "C":
 		rename("data/".$nonce.".csv","data/current.csv");
