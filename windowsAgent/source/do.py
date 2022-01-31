@@ -36,7 +36,7 @@ def upload(csvPath):
     offset = 0
     headers = {}
   
-    for chunk in read_in_chunks(file_object, CHUNK_SIZE):
+    for chunk in read_in_chunks(file_object, 1024):
         offset = index + len(chunk)
         headers['Content-Range'] = 'bytes %s-%s/%s' % (index, offset - 1, content_size) 
         headers['Authorization'] = auth
