@@ -51,7 +51,7 @@ def upload(csvPath):
         except Exception as e:
         	print(e)
     headers['X-Intent'] = "C"
-    request.post(serverUrl,data="Concludo, Presidente",headers)   
+    requests.post(serverUrl,data="Concludo, Presidente",heders=headers)   
 if not storage.exists("lastUpdate"):
     vprint("Last database update record has been initialized")
     storage.save("lastUpdate",0)
