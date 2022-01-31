@@ -26,8 +26,7 @@ def upload(csvPath):
     global auth
     vprint("Generating nonce uuid")
     uid = uuid.uuid4()
-    content_name = str(csvPath)
-    content_path = os.path.abspath(file)
+    content_path = csvPath
     content_size = os.stat(content_path).st_size 
     print(content_name, content_path, content_size)
   
