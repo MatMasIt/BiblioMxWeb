@@ -1,37 +1,30 @@
 <?php
 require("processCsv.php");
-function filterName($s){
-	$arr=str_split($s);
-	$fs="";
-	$allowedChars=str_split("ABCDEFGHIJLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-");
-	foreach($arr as $c){
-		if(in_array($c,$allowedChars)) $fs.=$c;
-	}
-	return $fs;
+if (!function_exists('getallheaders')) {
+    function getallheaders() {
+    $headers = [];
+    foreach ($_SERVER as $name => $value) {
+        if (substr($name, 0, 5) == 'HTTP_') {
+            $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+        }
+    }
+    return $headers;
+    }
 }
-
-$f=file("php://input");
-$AUTH="xmeQCwqrQcSQ7TQX2Yyw";
-if(trim($f[0])!=$AUTH) echo "UNAUTHORIZED";
-$nonce=trim($f[1]);
-$command=trim($f[2]);
-switch($command){
-	case "BEGIN":
-		$files=glob("data/*.csv");
-		array_diff($files,["data/current.csv"]);
-		foreach($files as $ff){
-			unlink($ff);
-		}
-		echo "BEGIN";
+$headers = getallheaders();
+$f = file_get_contents($_FILES['file']['tmp_name']);
+$f=explode("\n",file_get_contents("php://input"));
+$AUTH="3";
+file_put_contents("dump.txt",$f,FILE_APPEND);
+if(trim($headers["Authorization"])!=$AUTH) echo "UNAUTHORIZED";
+$nonce = md5($headers["X-Nonce"]);
+$intent = $headers["X-Intent"];
+switch($intent){
+	case "W":
+	    file_put_contents("data/".$nonce.".csv",FILE_APPEND);
 		break;
-	case "WRITE":
-		for($i=3;$i<count($f);$i++){
-			file_put_contents("data/".filterName($nonce).".csv",$f[$i],FILE_APPEND);
-		}
-		echo "PROCEED";
-		break;
-	case "CONCLUDE":
-		rename("data/".filterName($nonce).".csv","data/current.csv");
+	case "C":
+		rename("data/".$nonce.".csv","data/current.csv");
 		processCsv();
 		echo "OK";
 		break;
