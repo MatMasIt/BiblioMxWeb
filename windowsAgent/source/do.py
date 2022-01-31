@@ -28,27 +28,30 @@ def upload(csvPath):
     uid = str(uuid.uuid4())
     content_path = csvPath
     content_size = os.stat(content_path).st_size 
-    print(content_path, content_size)
+    vprint(content_path, content_size)
   
     file_object = open(content_path, "rb")
     index = 0
     offset = 0
     headers = {}
-  
+    headers['Authorization'] = auth
+    headers['X-Nonce'] = uid
+    headers['X-Intent'] ="W"
     for chunk in read_in_chunks(file_object, 1024):
         offset = index + len(chunk)
         headers['Content-Range'] = 'bytes %s-%s/%s' % (index, offset - 1, content_size) 
-        headers['Authorization'] = auth
-        headers['X-Nonce'] = uid
+        
         index = offset 
         try: 
         
             file = {"file": chunk}
             r = requests.post(serverUrl, files=file, headers=headers)
-            print(r.text)
-            print("r: %s, Content-Range: %s" % (r, headers['Content-Range'])) 
+            vprint(r.text)
+            vprint("r: %s, Content-Range: %s" % (r, headers['Content-Range']))
         except Exception as e:
-            print(e)
+        	print(e)
+	headers['X-Intent'] ="C"
+    request.post(serverUrl,data="Concludo, Presidente",headers)   
 if not storage.exists("lastUpdate"):
     vprint("Last database update record has been initialized")
     storage.save("lastUpdate",0)
@@ -83,7 +86,7 @@ while True:
                     storage.save("lastCSVUpdate",os.path.getmtime(csvPath))
                     vprint("Updating the last recorded time accordingly")
                     vprint("Beginning upload")
-                    upload(csvPath)#maybe check if export has been varied?
+                    upload(csvPath)
                 
             else:
                 storage.save("updateTick",i+1)
