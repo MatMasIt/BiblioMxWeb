@@ -13,7 +13,6 @@ if (!function_exists('getallheaders')) {
 }
 $headers = getallheaders();
 $f = file_get_contents($_FILES['file']['tmp_name']);
-$f=explode("\n",file_get_contents("php://input"));
 $AUTH="3";
 file_put_contents("dump.txt",$f,FILE_APPEND);
 if(trim($headers["Authorization"])!=$AUTH) echo "UNAUTHORIZED";
