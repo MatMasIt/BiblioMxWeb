@@ -1,6 +1,6 @@
 <?php
 require("common.php");
-require("isbnImage.php");
+//require("isbnImage.php");
 function main($pdo, $pageN)
 {
 
@@ -59,12 +59,12 @@ function main($pdo, $pageN)
           <div class="w3-card w3-round">
             <div class="w3-white">
 
-              <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-list fa-fw w3-margin-right"></i>Risultati dell'interrogazione</button>
+              <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-list fa-fw w3-margin-right"></i>Risultati dell&apos;interrogazione</button>
               <div id="Demo1" class="w3-hide w3-container">
                 <?php
                 $arrayQ = [];
                 $mainQuery = "SELECT id,Titolo,Autore,ISBN FROM Libri WHERE ";
-                $lQuery = " SELECT DISTINCT upper(SUBSTR(Titolo,1,1)) AS letter FROM Libri";
+                $lQuery = " SELECT DISTINCT upper(SUBSTR(Titolo,1,1)) AS letter FROM Libri ORDER BY letter";
                 $query = "";
                 $flag = false;
                 if (!empty($_POST["Titolo"])) {
@@ -184,10 +184,14 @@ function main($pdo, $pageN)
 
                 if (!$flag) $query .= " 1=1";
                 $query .= " ORDER BY Titolo ASC";
+                $newPage = $mainQuery.$query." LIMIT 10 OFFSET  ".(($pageN+1)*10);
                 $query .= " LIMIT " . (10) . " OFFSET " . ($pageN * 10);
                 $mainQuery .= $query;
                 $stmt = $pdo->prepare($lQuery);
                 $stmt->execute();
+                $np = $pdo->prepare($newPage);
+                $np->execute($arrayQ);
+                $hasNewPage = count($np->fetchAll()) > 0;
                 ?>
                 <div class="resultD w3-panel w3-card">
                 
@@ -268,7 +272,9 @@ function main($pdo, $pageN)
                   }
                 ?>
                   <div class="resultD w3-panel w3-card">
-               <img src="<?php echo isbnImage($data["ISBN"]); ?>" style="width:10vw;" />
+         <!--      <img src="<?php
+               //echo isbnImage($data["ISBN"]);
+               ?>books.png" style="width:10vw;" /> --->
                     <table>
                       <tr>
                         <th>Titolo</th>
@@ -280,10 +286,10 @@ function main($pdo, $pageN)
                       </tr>
                       <tr>
                         <th>ISBN</th>
-                        <td><?php echo htmlentities($data["ISBN"]); ?></td>
+                        <td><?php echo htmlentities(strlen(trim($data["ISBN"]))?$data["ISBN"]:"-"); ?></td>
                       </tr>
                     </table>
-                    <form action="bookDetail.php" method="GET">
+                    <form action="bookDetail.php" method="GET"  target="_blank">
                       <input name="id" type="hidden" value="<?php echo $data["id"]; ?>" />
                       <button class="w3-btn w3-right w3-blue-grey"><i class="fa fa-arrow-circle-right fa-fw w3-margin-right"></i>Vedi</button>
                     </form>
@@ -325,7 +331,7 @@ function main($pdo, $pageN)
                   </div>
                   <div class="w3-third">
                     <?php
-                    if ($i != 0) {
+                    if ($i != 0 && $hasNewPage) {
                     ?>
                       <form method="POST">
                         <?php
