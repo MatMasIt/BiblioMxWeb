@@ -201,7 +201,7 @@ function main($pdo)
     </footer>
 
     <footer class="w3-container w3-theme-d5">
-      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a></p>
+      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a> |   <a href="open.php"> Scarica i dati</a></p>
     </footer>
 
     <script>
