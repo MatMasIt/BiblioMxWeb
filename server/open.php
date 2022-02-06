@@ -129,7 +129,7 @@ function main($pdo)
                       </tr>
                       <tr>
                         <th>Dimensione</th>
-                        <td><?php echo human_filesize(filesize("data/current.xslx")); ?> </td>
+                        <td><?php echo human_filesize(filesize("data/current.xlsx")); ?> </td>
                       </tr>
                       
                     </tbody></table>
