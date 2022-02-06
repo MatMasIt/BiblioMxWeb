@@ -113,13 +113,46 @@ function main($pdo)
                         <th>Dimensione</th>
                         <td><?php echo human_filesize(filesize("data/current.csv")); ?> </td>
                       </tr>
-                       <tr>
-                        <th>Numero di elementi</th>
-                        <td><?php echo count(file("data/current.csv",FILE_SKIP_EMPTY_LINES))-1; ?> </td>
-                      </tr>
+                       
                     </tbody></table>
                       <a href="data/current.csv" class="w3-btn w3-right w3-blue-grey"><i class="fa fa-download"></i>Scarica</a>
                     </div>
+                    <div class="resultD w3-panel w3-card">
+                    <table>
+                      <tbody><tr>
+                        <th>Tipo</th>
+                        <td>Foglio di Microsoft Excel</td>
+                      </tr>
+                      <tr>
+                        <th>Nome</th>
+                        <td>current.xlsx</td>
+                      </tr>
+                      <tr>
+                        <th>Dimensione</th>
+                        <td><?php echo human_filesize(filesize("data/current.xslx")); ?> </td>
+                      </tr>
+                      
+                    </tbody></table>
+                      <a href="data/current.xlsx" class="w3-btn w3-right w3-blue-grey"><i class="fa fa-download" aria-hidden="true"></i>Scarica</a>
+                  </div>
+                  <div class="resultD w3-panel w3-card">
+                    <table>
+                      <tbody><tr>
+                        <th>Tipo</th>
+                        <td>Foglio di calcolo di LibreOffice</td>
+                      </tr>
+                      <tr>
+                        <th>Nome</th>
+                        <td>current.ods</td>
+                      </tr>
+                      <tr>
+                        <th>Dimensione</th>
+                        <td><?php echo human_filesize(filesize("data/current.ods")); ?> </td>
+                      </tr>
+                      
+                    </tbody></table>
+                      <a href="data/current.ods" class="w3-btn w3-right w3-blue-grey"><i class="fa fa-download" aria-hidden="true"></i>Scarica</a>
+                  </div>
                     <div class="resultD w3-panel w3-card">
                     <table>
                       <tbody><tr>
@@ -134,13 +167,11 @@ function main($pdo)
                         <th>Dimensione</th>
                         <td><?php echo human_filesize(filesize("db")); ?> </td>
                       </tr>
-                       <tr>
-                        <th>Numero di elementi</th>
-                        <td><?php echo $vols; ?> </td>
-                      </tr>
+                       
                     </tbody></table>
                       <a href="db" class="w3-btn w3-right w3-blue-grey"><i class="fa fa-download" aria-hidden="true"></i>Scarica</a>
                   </div>
+                  
 				<br />
                   <br />
 
