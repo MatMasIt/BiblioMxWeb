@@ -1,6 +1,6 @@
 <?php
 require("common.php");
-require("isbnImage.php");
+//require("isbnImage.php");
 function bookDisplay($pdo, $id)
 {
   
@@ -57,7 +57,7 @@ function bookDisplay($pdo, $id)
             <div class="w3-container">
               <h4 class="w3-center"><?php echo htmlentities($data["Titolo"]); ?></h4>
               <?php 
-                 $image = isbnImage($data["ISBN"]);
+                 $image = "books.png";// isbnImage($data["ISBN"]);
               ?>
               <center><a href="<?php 
                  if($image=="books.png"){
@@ -66,7 +66,7 @@ function bookDisplay($pdo, $id)
                  else{
                  	echo $image;
                  }
-              ?>"><img style="width:10vw" src="<?php echo $image; ?>" /></a></center>
+              ?>"><!--- <img style="width:10vw" src="<?php echo $image; ?>" /> ---></a></center>
               <hr>
               <?php
               if ($data["Autore"]) {
@@ -96,6 +96,10 @@ function bookDisplay($pdo, $id)
               <?php
               }
               ?>
+              <form action="https://google.com/search" method="GET"  target="_blank">
+                  <input name="q" type="hidden" value="<?php echo htmlentities($data["Titolo"]." ".$data["Autore"]); ?>" />
+                  <button class="w3-btn w3-right w3-blue-grey"><i class="fa fa-search fa-fw w3-margin-right"></i>Cerca su Google</button>
+             </form>
             </div>
           </div>
           <br>
@@ -187,7 +191,7 @@ function bookDisplay($pdo, $id)
     </footer>
 
     <footer class="w3-container w3-theme-d5">
-      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a></p>
+      <p>Repo <a href="<?php echo $GLOBALS["repoUrl"]; ?>" target="_blank">github</a> |   <a href="open.php"> Scarica i dati</a></p>
     </footer>
 
     <script>
