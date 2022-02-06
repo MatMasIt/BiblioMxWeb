@@ -25,6 +25,7 @@ switch($intent){
 	case "C":
 		rename("data/".$nonce.".csv","data/current.csv");
 		processCsv();
+		include("workbookExport.php");
 		echo "OK";
 		break;
 	default:
