@@ -157,6 +157,24 @@ function main($pdo)
                     <table>
                       <tbody><tr>
                         <th>Tipo</th>
+                        <td>Dump sql</td>
+                      </tr>
+                      <tr>
+                        <th>Nome</th>
+                        <td>current.sql</td>
+                      </tr>
+                      <tr>
+                        <th>Dimensione</th>
+                        <td><?php echo human_filesize(filesize("data/current.sql")); ?> </td>
+                      </tr>
+                       
+                    </tbody></table>
+                      <a href="data/current.sql" class="w3-btn w3-right w3-blue-grey"><i class="fa fa-download" aria-hidden="true"></i>Scarica</a>
+                  </div>
+   <div class="resultD w3-panel w3-card">
+                    <table>
+                      <tbody><tr>
+                        <th>Tipo</th>
                         <td>Database sqllite</td>
                       </tr>
                       <tr>
