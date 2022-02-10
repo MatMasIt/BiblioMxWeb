@@ -91,7 +91,7 @@ function main($pdo)
 
               <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-search fa-fw w3-margin-right"></i>Interroga l'archivio</button>
               <div id="Demo1" class="w3-hide w3-container">
-                <form method="POST" action="results.php">
+                <form method="GET" action="results.php" onsubmit="disableEmptyInputs(this)">
                   <div class="w3-row">
                     <p class="w3-third"><label>Titolo</label>
                       <input class="w3-input w3-border" name="Titolo" type="text">
@@ -153,7 +153,7 @@ function main($pdo)
             ?>
 
                     <p class="w3-third"><label>Dewey</label>
-                      <input class="w3-input w3-border" name="first" type="Dewey">
+                      <input class="w3-input w3-border" name="Dewey" type="Dewey">
                     </p>
 
                     <p class="w3-third"><label>Numero di pagine</label>
@@ -165,8 +165,11 @@ function main($pdo)
                   <button class="w3-btn w3-right w3-blue-grey"><i class="fa fa-search fa-fw w3-margin-right"></i>Interroga</button>
                  
                 </form>
+                <form method="POST" action="dewey.php">
+                <button class="w3-btn w3-left w3-blue-grey"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia catalogo Dewey</button>
+                </form>
                 <form method="POST" action="results.php">
-                <button class="w3-btn w3-left w3-blue-grey"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia catalogo</button>
+                <button class="w3-btn w3-left w3-blue-grey"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia catalogo alfabetico</button>
                 </form>
 				<br />
                   <br />
@@ -205,6 +208,8 @@ function main($pdo)
     </footer>
 
     <script>
+
+
       // Accordion
       function myFunction(id) {
         var x = document.getElementById(id);
@@ -229,6 +234,7 @@ function main($pdo)
       }
       //myFunction('Demo2')
       myFunction('Demo1')
+
     </script>
 
   </body>
