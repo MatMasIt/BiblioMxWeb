@@ -1,0 +1,937 @@
+000|Informatica, scienze dell'informazione, opere generali
+000|Generalità
+001|Conoscenza
+002|Il Libro
+003|Sistemi
+004|Elaborazione dei dati, scienza degli elaboratori e informatica
+005|Elaborazione dei dati, programmazione, programmi e dati
+006|Metodi speciali di elaborazioni
+007|Ricerche, Metodo
+010|Bibliografia
+011|Biografie generali
+012|Biografie personali
+014|Bibliografie e cataloghi di opere anonime e pseudonime
+015|Bibliografie nazionai
+016|bibliografie speciali
+017|Cataloghi per materia
+018|Cataloghi per autori, cronologici, per numero d'inventario
+020|Biblioteconomia e scienza dell'informazione
+020|Biblioteconomia e tecniche della documentazione
+021|Bibliografie generali
+023|Personale delle biblioteche
+025|Attività delle Biblioteche
+026|Biblioteche, archivi, centri d'informazione dedicati a disciplice e soggetti specifici
+027|Biblioteche generali e biblioteche pubbliche
+028|Lettura e uso di altri media
+029|Metodologia del lavoro intellettuale
+030|Enciclopedie
+031|Enciclopedie generali americane
+032|Enciclopedie generali in inglese
+035|enciclopedie italiane
+040|Pubblicazioni Miscellanee
+050|Periodici Generali
+051|Pubblicazioni generali in serie americane in inglese
+052|Pubblicazoni generali in serie in inglese
+053|Pubbblciazioni generali in serie e loro indici in altre lingue germaniche
+054|Pubblicazioni generalii inn serie in francese, provenzale o catalani
+055|Pubblicazioni generali in serie in italiano, in romeno, in lingue ladine
+060|Accadenie, Istituti culturali, Fondazioni e Congressi
+065|Attività delle biblioteche
+069|Metodologia del lavoro intellettuale
+070|Giornalismo, editoria, giornali
+074|Giornali e giornalismo in Francia e nel Principato di Monaco
+075|Giornali e giornalismo in Italia e in alcuni territori limitrofi
+076|Giornalismo e giornali nella Penisola Iberica e isole adiacenti in Spagna
+079|Giornali e giornalismo in altre aree geografiche
+080|Poligrafia e miscellanee generali
+081|Raccolte generali americane in inglese
+082|Raccolte generali in inglese
+083|Raccolte generali in altre lingue germaniche
+084|Raccolte generali in francese, in provenzale, in catalano
+085|Raccolte generali in italiano, in romeno e nelle lingue ladine
+089|Raccolte generali in altre lingue
+090|Manoscritti e libri rari
+091|Manoscritti
+092|Libri silografici
+093|Icunabuli
+094|Libri a stampa
+095|Libri notevoli per la legatura
+096|Miniature, libri figurati
+097|Libri rilevanti per la proprietà o l'origine
+098|Classi speciali di libri (erotici, proibiti, ...)
+099|Libri notevoli per il formato
+100|Filosofia e psicologia
+101|Teoria della filosofia
+102|Miscellanea
+103|Dizionari e enciclopedie
+104|Saggi
+105|Pubblicazioni in serie
+106|Organizzazioni e gestione
+107|Educazione, ricerca e argomenti correlati
+108|Gruppi di persone
+109|Storia e biografie
+110|Metafisica (filosofia speculativa)
+111|Ontologia
+112|Metodologia
+113|Cosmologia (filosofia dlla natura)
+114|Spazio
+115|Tempo
+116|Cambiamento
+117|Struttura
+118|Forza ed energia
+119|Numeri e quantità
+120|Epistemologia, causalità, genere umano
+121|Emistemologia (teoria della conoscenza)
+122|Causazione
+123|Determinismo e indeterminismo
+124|Teleologia
+125|Infinito
+126|L'Io
+127|Inconscio e subconscio
+128|Umanità
+129|Orignie e destino delle anime individuali
+130|Parapsicologia e occultismo
+131|Metodi parapsicologici e occulti per ottenere benesssere, felicità e successo
+132|Devianza mentale
+133|Argomenti specifici di parapsicogia e occultismo
+134|Magnetismo e Chiaroveggenza
+135|Sogni e misteri
+136|Caratteristiche mentali
+137|Grafologia divinatoria
+138|Fisionomia
+139|Frenologia
+140|Scuole di pensiero filosofiche e specifiche posizione filosofiche
+141|Idelismo, sistemi e dottrine correlate
+142|Filosofia critica
+143|Bergsonismo e intuizionismo
+144|Umanesimo, sistemi e dottrine correlate
+145|Sensazionalismo
+146|Naturalismo, sistemi e dottrine correlate
+147|Panteismo, sistemi e dottrine correlate
+148|Dogmatismo, eccleticismo, liberalismo, sincretismo e tradizionalismo
+149|Altri sistemi e dottrine filosofiche
+150|Psicologia
+151|Intelletto
+152|Percezione sensoriale, movimenti, emozioni e pulsioni
+153|Processi mentali consci e intelligenza
+154|Subconscio e stati e processi alterati
+155|Psicologia differenzialie e dello sviluppo
+156|Psicologia comparativa
+157|Emozioni
+158|Psicologia applicata
+159|Volontà
+160|Logica
+161|Induzione
+162|Deduzione
+165|Fallacie
+166|Sillogismi
+167|Ipotesi
+168|Argomenti e parsuasione
+169|Analogia
+170|Etica (filosofia morale)
+171|Sistemi etici
+172|Etica politica
+173|Etica delle relazioni famigliari
+174|Etica delle relazioni famigliari
+175|Etica del lavoro
+175|Etica della ricreazione, del divertimento, degli spettacoli pubblici e della comunicazione
+176|Etica del sesso e della riproduzioni
+177|Etica delle relazioni sociali
+178|Etica del consumo
+179|Altre norme etiche
+180|Filosofia antica, medievale e orientale
+181|Filosofia orientale
+182|Filosofi greci presocratici
+183|Filosofia sofistica e socratica
+184|Filosofia Platonica
+185|Filosofia Aristotelica
+186|Filosofia Scettica e Neoplatonica
+187|Filosofia Epicurea
+188|Filosofia Stoica
+189|Filosofia Medievale Occidentale
+190|Filosofia occidentale moderna
+191|Filosofia degli Stati Uniti e del Canada
+192|Filosofia della Gran Bretagna
+193|Filosofia della Germania e dell'Austria
+194|Filosodia della Francia
+195|Filosofia dell'Italia
+196|Filosofia della Spagna e del Portogallo
+197|Filosofia della Russia
+198|Filosofia della Scandinavia e della Finlandia
+199|Filosofia in altre aree geografiche
+200|Religione
+201|Mitologia religiosa, classi generali di religioni, attitudini interreligiose, teoria sociale
+202|Dottrine
+203|Culto pubblico e altre pratiche
+204|Esperienza, vita e pratica religiosa
+205|Etica religiosa
+206|Leader e organizzazione
+207|Missione ed educazione religiosa
+208|Fonti
+209|Segreti e movimenti di riforma
+210|Religione naturale
+211|Concetti di Dio
+212|Esistenza, modalità di conoscenza di Dio e i suoi attributi
+213|Creazione
+214|Teodicea
+215|Scienza e religione
+216|Male
+217|Preghiera
+218|Umanità
+219|Analogie
+220|Bibbia
+221|Vecchio Testamento
+222|Libri storici del Vecchio Testamento
+223|Libri poetici del Vecchio Testamento
+224|Libri profetici del Vecchio Testamento
+225|Nuovo Testametno
+226|Vangeli e Atti
+227|Epistole
+228|Rivelazione (Apocalisse)
+229 Apocrifia, peudoepigrafia e testi inter-testamentali
+230|Teologia cristiana, teologia dottrinale cristiana
+231|Dio
+232|Gesù Cristo e la sua famiglia
+233|Umanità
+234|Salvezza e grazia
+235|Esseri spirituali
+236|Escatologia
+237|Futuro
+238|Credi, confessioni, catechismo
+239|Apologia e polemica
+240|Teologia morale e devozionale cristiana
+241|Etica cristiana
+242|Letteratura devozionale
+243|Scritture evangelici per individui e famiglie
+244|Finzione Religiosa
+245|Innologia
+246|Uso dell'arte nel Cristianesimo
+247|Addobbi per chiesea e articoli correlati
+248|Esperienza, pratica e vita cristiana
+249|Osservanza cristiana nella vita famigliare
+250|Chiesa cristiana e comunità. Ordini Religiosi cristiani
+251|Omelia
+252|Sermoni
+253|Teologia pastorale
+254|Organizzazione parrochiale
+255|Congregazioni e ordini religiosi
+256|Società religiose
+257|Scuole e librerie parrochiali
+258|Medicina parrocchiale
+259|Cura pastorale di famiglie e specifici gruppi di persone
+260|Teologia cristiana sociale ed ecclesiastica
+261|Teologia sociale, religioni interreligiose, relazioni ed attitudini religiose
+262|Ecclesiologia
+263|Giorni, tempi e posti di osservanza religiosa
+264|Culto pubblico
+265|Sacramenti, altri riti e atti
+266|Missioni
+267|Associazioni e lavori religiosi
+268|Educazione religiosa
+269|Rinnovo spirituale
+270|Storia e geografia della chiesa cristiana organizzata
+271|congregazine religiosa e ordini nella storia della chiesa
+272|Persecuzioni nella storia della Chiesa
+273|Controversie dottrinali ed eresie nella storia generale della chiesa
+274|Cristianità in Europa
+275|Cristianità in Asia
+276|Cristianità in Africa
+277|Cristianità in Nordamerica
+278|Cristianità in Sudamerica
+279|Storia della Cristiantà in altre aree
+280|Confessioni e sette della Chiesa cristiana
+281|Chiesa antica e Chiesa orientale
+282|Chiesa Cattolica Romana
+283|Chiesa Anglicana
+284|Denominazioni Protestati di origine continentale 
+285|Chiese presbiteriane, chiese riformate in America, chiese Congregazionali
+286|Chiese battiste, restaurazioniste e avventiste
+287|Chiese metodiste e correlate
+288|Unitarianismo
+289|Altre denominazioni e sette
+290|Altre religioni e religione comparata
+291|Religione comparata
+292|Religione classica (Greca e Romana)
+293|Religione Germanica
+294|Religione Indica
+295|Zoroastrism
+296|Giudaismo
+297|Islam
+298|Mormonismo
+299|Altre religioni
+300|Opere di carattere generale e Sociologia
+301|Sociologia ed antropologia
+302|Interazioni sociali
+303|Processi sociali
+304|Fattori influenzanti il comportamento sociae
+305|Gruppi di persone
+306|Culture ed istituzioni
+307|Comunità
+308|Poligrafia
+309|Storia della sociologia
+310|Statistica
+311|Teoria e metodi
+312|Popolazione
+313|Argomenti speciali
+314|Statistiche genereali dell'Europa
+315|Statistiche generali dell'Asia
+316|Statistiche generali dell'Africa
+317|Statistiche generali del Nord America
+318|Statistiche generali del Sud America
+319|Statistiche generali dell'Australasia, Isole di oceano Pacifico e Atlantico, Isole Artiche e Antartide
+320|Science politiche
+321|Forme di governo e stati
+322|Relazione tra lo stato e gruppi organizzati e i loro membri
+323|Diritti civili e politici
+324|Il processo politico
+325|Mirazione e colonizzazione internazionali
+326|Schiavitù ed emancipazione
+327|Relazioni internazionali
+328|Il processo legislativo
+330|Scienze economiche
+331|Economia del laboro
+332|Economia finanziaria
+333|Economia di terra ed energia
+334|Cooperative
+335|Socialismo e sistemi correlatti
+336|Finanza pubblica
+337|Economiainternazionale
+338|Produzione
+339|Macroeconomia e argomenti correlati
+340|Diritto
+341|Diritto delle nazioni
+342|Diritto costituzionale ed amministrativo
+343|Diritto militare, della difesa, della proprietà privata, della finanza pubblica, delle tasse, del commercio, e dell'industria
+344|Diritto del Lavoro, dei servizi social, dell'educazione, e della cultura
+345|Diritto penale
+346|Diritto privato
+347|Procedura e corti
+348|Leggi, regolamenti, casi
+349|Leggi di specifiche giurisdizioni, aree, regioni socioeconomiche, organizzazioni regionali intergovernmental
+350|Amministrazione pubblica e scienze militari
+551|Amministrazione pubblica
+352|Considerazioni generali di amministrazione pubblica
+353|Specifici campi della amministrazione pubblica
+354|Amministrazione pubblica, economia e ambiente
+355|Scienza militare
+356|Fanteria e combattimento
+357|Fanteria a cavallo e combattimento
+358|Aviazione e altre forze e compattimenti specializzati; ingegneria e servizi correlati
+359|Marina e combattimento
+360|Assistenza sociale, sicurezza sociale
+361|Problemi e servizi sociali
+362|Problemi sociali di e servizi per gruppi di persone
+363|Altri problemi sociali e servizi
+364|Criminologia
+365|Sistema penale ed istituzioni correlate
+366|Associazione e società segrete
+367|Club generali
+368|Assicurazioni
+369|Associazioni
+370|Educazione
+371|Scuole e le loro attività, educazione speciale
+372|Educazione elementare
+373|Educazione secondaria
+374|Educazione adulta
+375|Curriculum educativo
+376|Educazione e donne
+377|Educazione ed etnie
+378|Educazione terziaria
+379|Problemi di politica pubblica nell'educazione
+380|Commercio, comunicazone, trasporti
+381|Commercio
+382|Commercio internazionale
+383|Comunicazione postale
+384|Comunicazioni
+385|Trasporti ferroviari
+386|Trasporti fluviali e marittimi
+387|Trasporto in acqua, aria e nello spazio
+388|Trasporti
+389|Metrologia e standardizzazione
+390|Usi e costumi, etichetta, folclore
+391|Usi e aspetto esteriore individuale
+392|Usi del ciclo di vita e della vita domestica
+393|Usi relativi alla morte
+394|Usi generali
+395|Etichetta (Maniere)
+396|Posizione sociale delle donne
+397|Posizione sociale degli emarginati
+398|Folclore
+399|Usi relativi a guerra e diplomazia
+400|Lingue e linguistica
+401|Filosofia e toria, lingue internazionali
+402|Miscellanea
+403|Dizionari, enciclopedie, elenchi
+404|Argomenti linguistici speciali
+405|Pubblicazioni in serie
+406|Organizzazion e gestione
+407|Educazione, ricerca e argomenti correlati
+408|Gruppi di persone
+409|Geografia e biografia
+410|Linguistica
+411|Sistemi di scrittura delle forme linguistiche standard
+412|Etimologia delle forme linguistiche standard
+413|Dizionari delle forme linguistiche standard
+414|Fonologia e fonetica delle forme linguistiche standard
+415|Grammatica delle forme linguistiche standard
+416|Prosodia
+417|Dialettologia e storia elle lingue
+418|Uso standard (Linguistica prescrittiva)
+419|Lingue dei segni
+420|Lingue inglese e anglosassone (Old English)
+421|Sisemi di scrittura, fonologia e fonetica dell'inglese standard
+422|Etimologia dell'inglese standard
+423|Dizionari dell'inglese standard
+424|Dizionari dei sinonimi e contrari dell'inglese standard
+425|Grammatica dell'inglese standard
+426|Prosodie inglesi
+427|Variazioni diacroniche e sincroniche, storiche e moderne dell'inglese
+428|Uso standard dell'inglese (Linguistica prescrittiva)
+429| Anglosassone (Old English)
+430|Lingue germaniche, Tedesco
+431|Sistemi di scrittura, fonologia, fonetica del tedesco standard
+432|Etimologia del tedesco standard
+433|Dizionari del tedesco standard
+434|Dizionari dei sinonimi e contrari del tedesco standard
+435|Grammatica del tedesco standard
+436|Prosodie tedesche
+437|Variazioni diacroniche e sincroniche, storiche e moderne del tedesco
+438|Uso standard del tedesco (Linguistica prescrittiva)
+429|Altre lingue germaniche
+440|Lingue romanze, Francese
+441|Sistemi di scrittura, fonologia, fonetica del francese standard
+442|Etimologia del francese standard
+443|Dizionari del francese standard
+444|Dizionari dei sinonimi e contrari del francese standard
+445|Grammatica del francese standard
+446|Prosodie francesi
+447|Variazioni diacroniche e sincroniche, storiche e moderne del francese
+448|Uso standard del francese (Linguistica prescrittiva)
+449|Occitano, Catalano, Franco-Provenzale
+450|Lingua italiana, rumena e affini
+451|Sistemi di scrittura, fonologia, fonetica dell'italiano standard
+452|Etimologia dell'italiano standard
+453|Dizionari dell'italiano standard
+454|Dizionari dei sinonimi e contrari dell'italiano standard
+455|Grammatica dell'italiano
+456|Prosodie italiane
+457|Variazioni diacroniche e sincroniche, storiche e moderne del tedesco
+458|Uso standard dell'italiano (Linguistica prescrittiva)
+459|Rumeno, Retico, Sardo, Corso
+460|Lingue spagnola e portoghese
+461|Sistemi di scrittura, fonologia, fonetica dello spagnolo standard
+462|Etimologia dello spagnolo standard
+463|Dizionari dello spagnolo standard
+464|Dizionari dei sinonimi e contrari dello spagnolo standard
+465|Grammatica dello spagnolo
+466|Prosodie spagnole
+467|Variazioni diacroniche e sincroniche, storiche e moderne dello spagnolo
+468|Uso standard dello spagnolo (Linguistica prescrittiva)
+469|Portoghese
+470|Linghe italiche, Latino
+471|Sistemi di scrittura, fonologia, fonetica del latino classico
+472|Etimologia del latino classico
+453|Dizionari del latino classico
+474|Dizionari dei sinonimi e contrari del latino classico
+475|Grammatica del latino
+476|Prosodie latine
+477|Latino antico, postclassico e volgare
+478|Uso standard del latino (Linguistica prescrittiva)
+479|Altre lingue italiche
+480|Lingue elleniche, Greco classico e moderno
+481|Sistemi di scrittura, fonologia, fonetica del greco classico
+482|Etimologia del greco classico
+483|Dizionari del greco classico
+484|Dizionari dei sinonimi e contrari del greco classico
+485|Grammatica del greco classico
+486|Prosodie greche
+487|Greco preclassico e postclassico
+488|Uso standard del greco classico (Linguistica prescrittiva)
+489|Altre lingue elleniche
+490|Altre lingue
+491|Lngue indo-europee orientali e lingue celtiche
+492|Lingue afro-asiatiche
+493|Lingue afro-asiatiche non semitiche
+494|Lingue altiche, uraliche, iperboree, dravidiche, lingue varie dell'Asia meridionale
+495|Lingue dell'Asia orientale e sud-orientale
+496|Lingue africane
+498|Lingue sudamericane
+499|Lingue non australiane dell'Ocenia, lingue autraliane, lingue varie
+500|Scienze pure
+501|Filosofia e teoria
+502|Miscellanea
+503|Dizionari, enciclopedie, elenchi
+505|Pubblicazioni in serie
+506|Organizzazioni e gestione
+507|Educazione, ricerca ed argomenti correlati
+508|Storia naturale
+509|Storia, geografia, biografia
+510|Matematica
+511|Principi generali della matematica
+512|Algebra
+513|Aritmetica
+514|Topologia
+515|Analisi
+516|Geometria
+518|Analis numerica
+519|Probabilità a matematica applicata
+520|Astronomia e scienze connesse
+521|Meccanica astronomica
+522|Tecniche, procedure, apparati, strumenti, materiali
+523|Corpi e fenomeni celesti specifici
+525|Terra
+526|Geografia matematica
+527|Navigazione astronomica
+528|Effemeridi
+529|Cronologia
+530|Fisica
+531|Meccanica classica
+532|Meccanica dei fluidi
+533|Meccanica dei gas
+534|Suoni e vibrazioni
+535|Luce e radiazioni
+536|Calore
+537|Elettricità ed elettronica
+538|Magnetismo
+539|Fisica moderna
+540|Chimica e scienze connesse
+541|Chimica-fisica
+542|Tecnhiche, procedure, apparati, strumenti e materiali
+543|Chimica analitica
+544|Analisi qualititativa
+545|Analisi quantitativa
+546|Chimica inorganica
+547|Chimica inorganica
+548|Cristallografia
+549|Mineralogia
+550|Scienze della Terra e di altri mondi
+551|Geologia, idrologia, meteorologia
+552|Petrologia
+553|Geologia economica
+554|Scienze della Terrra dell'Europa
+555|Scienze della Terrra dell'Asia
+556|Scienze della Terrra dell'Africa
+557|Scienze della Terrra del Nord America
+558|Scienze della Terrra del Sud America
+559|Scienze della Terrra dell'Australasia, delle isole dell' Oceano Pacifico e Atlantico, delle isole Artiche, dell'Antartide e dei mondi estraterrestri
+560|Paleontologia, Paleozoolgia
+561|Paleobotanica, paleontologia microorganismi
+562|Paleontologia degli invertebrati
+563|Paleontologia di dossili marini e invertebrati costieri
+564|Paleontologia di molluschi e molluscoidei
+564|Paleontologia degli artropodi
+566|Paleontologia dei cordati
+567|Paleontologia dei vertebrati a sangue freddo
+568|Paleontologia degli uccelli
+459|Paleontologia dei mammiferi
+570|Scienze della vita, Biologia
+571|Fisiologia
+572|Biochimica
+573|Sistemi fisiologici specifici di animali, istologia e fisiologia animale
+575|Fisiologia delle piante
+576|Genetica ed eoluzione
+577|Ecologia
+778|Storia naturale
+578|Storia naturale di microorganismi, funghi e alghe
+580|Scienze botaniche
+581|Storia botanica
+582|Piante con caratteristiche e fiori particolari
+583|Magnoliopsida
+584|Liliopsida
+585|Pinophyta
+587|Cryptogamia
+588|Bryophyta
+589|Silvicoltura
+590|Scienze zoologiche, Zoologia
+591|Storia zoologica
+592|Invertebrati
+593|Invertebrati costieri e marini
+594|Molluschi e molluscoidei
+595|Atrtopodi
+596|Cordati
+597|Vertebrati a sangue freddo
+598|Uccelli
+599|Vertebrati
+600|Tecnologia (Scienze applicate)
+601|Filosofia e teoria
+602|Miscellanea
+603|Dizionari, enciclopedie, elenchi
+604|Disegno tecnico, tecnologie correlati a materiali pericolosi, gruppi di persone
+605|Pubblicazioni in serie
+606|Organizzazioni
+607|Educazione, ricerca, argomenti correlati
+608|Brevetti
+609|Storia, geografia, biografia
+610|Medicina e salute
+611|Anatomia, citologia e istologia umana
+612|Fisiologia umana
+613|Salute e sicurezza personale
+614|Medicina forense, ferite e malattie; medicina preventiva
+615|Farmacologia
+616|Malattie
+617|Chirurgia, medicina regionale, ortodonzia, oftamologia, otologia, audiologia
+618|Ginecologia, ostetricia, pediatria, geriatria
+619|Medicina sperimentale
+620|Ingegneria e attività affini
+621|Fisica applicata
+622|Ingegneria mineraria
+623|Ingegneria militare e nautica
+624|ingegneria civile
+625|Ingegneria di strade e ferrovie
+627|Ingegneria idraulica
+628|Ingegneria sanitaria
+629|Altre branche dell'ingegneria
+630|Argicoltura e tecniche connesse
+631|Tecniche, apparati, strumenti e materiali
+632|Malattie, parassiti e problemi delle piante
+633|Campi e piantagioni
+634|Frutteti, frutti e silvicoltura
+635|Giardini e orticoltura
+636|Allevamento di animali
+637|Latticini
+638|Insetticoltura
+639|Caccia, Pesca, conservazione
+640|Gestione della casa e della famiglia
+641|Cibo e bevande
+642|Pasti e servizio
+644|Servizi casalinghi
+645|Arredamento casalingo
+646|Cucito, vestiti, gestione della vita personale e famigliare
+647|Gestione di case pubbliche
+648|Gestione casalinga
+649|Cura di bambini e persone con disabilità e malattie
+650|Direzione aziendale e servizi ausiliari
+651|Uffici e servizi
+652|Stenografia
+657|Contabilità
+658|Gestione generale
+659|Pubblicità e pubbliche relazioni
+660|Tecnologie chimiche e affini
+661|Tecnologie della chimica indstriale
+662|Tecnologie di esplosivi e carburanti
+663|Tecnologie delle bibite
+664|Tecnologie del cibo
+665|Tecnologie di oli, grassi, cere e gas industriali
+666|Tecnologie della ceramica
+667|Tecnologie della pulizia, del colore e del rivestimento
+668|Tecnologie di altri prodotti organici
+669|Metallurgia
+670|Manifatture
+671|Lavorazione del metallo
+672|Ferro, acciaio e leghe del ferro
+673|Metalli non ferrosi
+674|Legno, sughero e prodotti
+675|Lavorazionedi pelle e pelliccia
+676|Tecnologia di polpa e carta
+677|Tessili
+678|Elastomeri e derivati
+679|Altri prodotti di materiali specifici
+680|Manifattura di prodotti per usi specifici
+681|Strumenti di precisione o altri strumenti
+682|Forgiatura del metallo su piccola scala
+683|Hardware e eletttrodomestici
+684|Arredamento e ristrutturazioni
+685|Beni relizzati con pelliccia o pelle
+686|Stampa e tipografia
+687|Vestiti ed accessori
+688|Altri prodotti finiti, imballaggi
+690|Edilizia
+691|Materiali
+692|Pratiche ausiliarie di costruzione
+693|Specifici materiali o specifiche pratiche
+694|Costruzione in legno
+695|Tetti
+696|Servizi
+697|Riscaldamento, ventilazione, aria condizionata
+698|Finitura dei dettagli
+700|Arti, belle arti e arti decorative
+701|Filosofia e teoria
+702|Miscellanea
+703|Dizionari, enciclopedie, elenchi
+704|Argomenti speciali
+705|Pubblicazioni in serie
+706|Organizzaioni e gestione
+707|Educazione e ricerca
+708|Gallerie musei e collezioni private
+709|Storia, geografia e biografia
+710|Urbanistica e arte del paesaggio
+711|Pianificazione urbanistica
+712|Architettura del paesaggio
+713|Architettura del paesaggio stradale
+714|Specchi d'acqua nell'architettura del paesaggio
+715|Piante legnose nell'architettura del paesaggio
+716|Piante erbacee nell'architettura del paesaggio
+717|Strutture nell'architettura del paesaggio
+718|Architettura paesaggistica dei cimiteri
+719|Paesaggi naturali
+720|Architettura
+721|Materiali e strutture architettoniche
+722|Architettura fino al 300 d.C.
+723|Architetutra dal 300 d.C. al 1399 d.C.
+724|Architettura dal 1400 d.C.
+725|Strutture pubbliche
+726|Struttre religiose
+727|Strutture a scopi educativi e di ricerca
+728|Strutture residenziali
+729|Design e descorazione di strutture e accessori
+730|Arti plastiche, scultura
+731|Processi, forme e soggetti della scultura
+732|Sculture fino al 500 d.C.
+733|Scultura, Greca, Etrusca, Romana
+734|Sculture dal 500 d.C. al 1399 d.C.
+735|Scultura dal 1400
+736|Intaglio ed intagli
+737|Numismatica e sigillografia
+738|Arti della ceramica
+739|Lavorazione artistica del metallo
+740|Disegno, arti decorative
+741|Disegno e disegni
+742|Prospettiva
+743|Disegno e disegni per soggetto
+745|Arti decorative
+756|Arti tessili
+747|Decorazione di interni
+748|Vetro
+749|Arredamento ed accessori
+750|Pittura e pitture
+751|Tecniche, procedure, apparati, strumenti, materiali, forme
+752|Colori
+753|Simbolismo, allegoria, mitologia, leggenda
+754|Generi di pittura
+755|Religione
+757|Figure umane
+758|Natura e architettura
+759|Storia, geografia, biografia
+760|Arti grafiche, tecniche di impressione e stampe
+761|Stampa a caratteri fissi o mobili
+763|Litografia
+764|Cromolitografia, serigrafia
+765|Incisione nel metallo
+766|Mezzotinto, acquatinta e processi correlati
+767|Acquaforte e puntasecca
+769|Stampe
+770|Fotografia, arte digitale, film, video
+771|Tecniche, procedure, apparati, strumenti, materiali
+772|Processi con sali metallici
+773|Pigmenti nella stampa
+774|Olografia
+775|Fotografia digitale
+776|Arte digitale
+777|Cinematografia e videografia
+778|Specifici campi e tipi di fotografia
+779|Immagini forografiche
+780|Musica
+781|Principi generali e forme musicali
+782|Voce musicale
+783|Musica per voci singole
+784|Strumenti e insiemi di strumenti, musica associata
+785|Insiemi con solo uno strumento per ogni parte
+786|Tastiere meccaniche e elettroniche, strumenti a percussione
+787|Strumenti a corda
+788|Strumenti a fiato
+790|Arti ricreative e dello spettacolo
+791|Recite pubbliche
+792|Presentazioni su palco
+793|Giochi e divertimenti per interni
+794|Giochi di abilità per interni
+795|Giohi aleatori
+796|Sport e giochi atletici da esterni
+797|Sport acquatici e in aria
+798|Sport equestri
+799|Pesca, caccia, tiro
+800|Letteratura, retorica e critica
+801|Filosofia e teoria
+802|Miscellanea
+803|Dizionari, enciclopedie, elenchi
+805|Pubblicazioni in serie
+806|Organizzazioni e gestione
+807|Educazione, ricerca e argomenti correlati
+808|Retorica, collezione di testi letterari da più di due letterature
+809|Storia, descrizione e critica di più di due letterature
+810|Letteratura americana in lingua inglese
+811|Poesia americana in inglese
+812|Teatro americano in Inglese
+813|Narrativa americana in inglese
+814|Saggi americani in inglese
+815|Discorsi americani in inglese
+816|Lettere americane in inglese
+817|Umorismo e satira americana in inglese
+818|Scritti vari americani in inglese
+820|Letteratura in lingua inglese e anglosassone (Old English)
+821|Poesia inglese
+822|Teatro inglese
+823|Narrativa inglese
+824|Saggi inglesi
+825|Discorsi inglesi
+826|Lettere inglesi
+827|Umorismo e satira inglese
+828|Scritti vari in inglese
+829|Letteratura in anglosassone (Old English)
+830|Letterature nelle lingue germaniche, Letteratura Tedesca
+831|Poesia tedesca
+832|Teatro tedesco
+833|Narrativa tedesca
+834|Saggi tedeschi
+835|Discorsi tedeschi
+836|Lettere tedesche
+837|Umorismo e satira tedeschi
+838|Scritti vari in tedesco
+839|Altre letterature tedesche
+840|Letterature nelle lingue romanze, Letteratura francese
+841|Poesia francese
+842|Teatro francese
+843|Narrativa francese
+844|Saggi francesi
+845|Discorsi francesi
+826|Lettere francesi
+827|Umorismo e satira francese
+848|Scritti vari in francese
+849|Letterature occitana, catalana e franco-provenzale
+850|Letterature in lingua italiana, rumena e affini
+851|Poesia in italiano
+852|Teatro italiano
+853|Narrativa italiana
+854|Saggi italiani
+855|Discorsi italiani
+856|Lettere italiane
+857|Umorismo e satira italiana
+858|Scritti vari in italiano
+859|Letterature Rumena, Retica, Sarda e Corsa
+860|letterature in lingua spagnola e portoghese
+861|Poesia spagnola
+862|Teatro spagnolo
+863|Narrativa spagnola
+864|Saggi spagnoli
+865|Discorsi spagnoli
+866|Lettere spagnole
+867|Umorismo e satira spagnole
+868|Scritti vari in spagnolo
+869|Letteratura portoghese
+870|Letteratura nelle lingue italiche, Letteratura latina
+871|Poesia latina
+872|Teatro latino
+873|Narrativa latina
+874|Saggi latini
+875|Discorsi latini
+876|Lettere latine
+877|Umorismo e satira latina
+878|Scritti vari in latino
+879|Letteratura in altre lingue italiche
+880|Letteratura nelle lingue elleniche, Letteratura greca classica
+881|Poesia in greco classico
+882|Dramma in greco classico
+883|Narrativa in greco classico
+884|Saggi in greco classico
+885|Discorsi in greco classico
+886|Lettere in greco classico
+887|Umorismo e satira in greco cassico
+888|Scritti vari in greco classico
+889|Letteratura in gerco antico
+890|Letterature in altre lingue
+891|Letterature indorueopee orientali e celtiche
+892|Letterature afro-asiatiche
+893|Letterature afro-asiatiche non semitiche
+894|Letterature altiche, uraliche, iperboree, dravidiche, lingue varie dell'Asia meridionale
+895|Leterature dell'Asia orientale e sud-orientale
+896|Letterature africane
+898|Letterature sudamericane
+899|Letterature non australiane dell'Ocenia, lingue autraliane, lingue varie
+900|Geografia, storia e discipline ausiliarie
+901|Filosofia e teoria della storia
+902|Miscellanea storiografica
+903|Dizionari, enciclopedie e elenchi storiografici
+904|Raccolte di testimonianze di eventi
+905|Pubblicazioni in serie storiografiche
+906|Organizzazioni e gestione storiografica
+907|Educazione, ricerca, e argomenti connesi storiografici
+908|Storia di gruppi di persone
+909|Storia mondiale
+910|Geografia generale, viaggi
+911|Geografia storica
+912|Rappresentazioni grafiche della superficie della Terra o di mondi extraterrestri
+913|Geografia e viaggi nel mondo antico
+914|Geografia e viaggi in Europa
+915|Geografia e viaggi in Asia
+916|Geografia e viaggi in Africa
+917|Geografia e viaggi in Nord America
+918|Geografia e viaggi in Sud America
+919|Geografia e viaggi in Australasia, isole di oceano Pacifico e Atlantico, artide, Antartide e mondi extraterrestri
+920|Biografie generali, genealogia, araldica
+921|Biografie (I)
+922|Biografie (II)
+923|Biografie (III)
+924|Biografie (IV)
+925|Biografie (V)
+926|Biografie (VI)
+927|Biografie (VII)
+928|Biografie (VIII)
+929|Genealogia
+930|Storia generale del mondo antico
+931|Cina fino al 420 d.C.
+932|Egitto fino al 640 d.C.
+933|Palestina fino al 70 d.C.
+934|Sud Asia fin al 647 d.C.
+935|mesopotamia fino al 637 d.C. e Iran fino al 637 d.C.
+936|Europa e nord, ovest della penisola italica fino al 499 d.C.
+937|Penisola italica e territori adiacenti fino al 476 d.C.
+938|Grecia fino al 323 d.C.
+939|Altre parti del mondo antico
+940|Storia generale dell'Europa
+941|Isole britanniche
+942|Inghilterra e Galles
+943|Germania ed europa centrale
+944|Francia e Monaco
+945|Italia, San Marino, Città del Vaticano, Malta
+946|Spagna, Andorra, Gibilterra, Portogallo
+947|Russia ed est Europa
+948|Scandinavia
+949|Altre parti dell'Europa
+950|Storia generale dell'Asia
+951|Cina e aree adiacenti
+952|Giappone
+953|Penisola Arabica ed aree adiacenti
+954|India e sud Asia
+955|Iran
+956|Medio Oriente
+957|Siberia
+958|Asia centrale
+959|Sud-est Asia
+960|Storia generale dell'Africa
+961|Tunisia e Libia
+962|Egitto, Sudan e Sudan meridionale
+963|Etiopia ed Eritrea
+964|Marocco, Sahara dell'Ovest, Canarie
+965|Algeria
+966|Africa Occidentale ed Isole
+967|Africa Centrale
+968|Sudafrica ed Africa neridionale
+969|Isole meridionali dell' Oceano Indiano
+970|Storia dell'America settentrionale
+971|Canada
+972|Messico, America Centrale, Bermuda
+973|Stati Uniti d'America
+974|Stati Uniti del nord
+975|Stati Uniti del sud
+976|Stati Uniti del centro-sud
+977|Stati Uniti del centro-nord
+978|Stati Uniti occidentali
+979|Costa pacifica degli Stati Uniti e Grandi Laghi
+980|Storia generale dell'America meridionale
+981|Brasile
+982|Argentina
+983|Chile
+984|Bolivia
+985|Perù
+986|Colombia ed Ecuador
+987|Venezuela
+988|Guiana
+989|Paraguay e Uruguay
+990|Storia generale di altre parti del mondo e di mondi extraterrestri
+990|Autralasia, Isole dell'Oceano Pacifico e Atlantico, Isol Artiche, Antartide, mondi estraterrestri
+993|Nuova Zelanda
+994|Australia
+995|Nuova Guinea
+996|Polinesia
+997|Isole dell'Oceano Atlantico
+998|Artide e Antartide
+999|Mondi extraterrestri
