@@ -73,7 +73,7 @@
 110|Metafisica (filosofia speculativa)
 111|Ontologia
 112|Metodologia
-113|Cosmologia (filosofia dlla natura)
+113|Cosmologia (filosofia della natura)
 114|Spazio
 115|Tempo
 116|Cambiamento
