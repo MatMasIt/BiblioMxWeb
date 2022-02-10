@@ -63,108 +63,117 @@ function main($pdo, $pageN)
               <div id="Demo1" class="w3-hide w3-container">
                 <?php
                 $arrayQ = [];
-                $mainQuery = "SELECT id,Titolo,Autore,ISBN FROM Libri WHERE ";
+                $mainQuery = "SELECT id,Titolo,Autore,ISBN,Dewey FROM Libri WHERE ";
                 $lQuery = " SELECT DISTINCT upper(SUBSTR(Titolo,1,1)) AS letter FROM Libri ORDER BY letter";
                 $query = "";
                 $flag = false;
-                if (!empty($_POST["Titolo"])) {
+                if (!empty($_GET["Titolo"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Titolo)) LIKE ('%' || trim(lower(:Titolo)) || '%')";
-                  $arrayQ[":Titolo"] = $_POST["Titolo"];
+                  $arrayQ[":Titolo"] = $_GET["Titolo"];
                 }
-                if (!empty($_POST["Letter"])) {
+                if (!empty($_GET["Letter"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Titolo)) LIKE ( trim(lower(:Letter)) || '%')";
-                  $arrayQ[":Letter"] = $_POST["Letter"];
+                  $arrayQ[":Letter"] = $_GET["Letter"];
                 }
-                if (!empty($_POST["Autore"])) {
+                if (!empty($_GET["Autore"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Autore)) LIKE ('%' || trim(lower(:Autore)) || '%')";
-                  $arrayQ[":Autore"] = $_POST["Autore"];
+                  $arrayQ[":Autore"] = $_GET["Autore"];
                 }
-                if (!empty($_POST["Editore"])) {
+                if (!empty($_GET["Editore"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Editore)) LIKE ('%' || trim(lower(:Editore)) || '%')";
-                  $arrayQ[":Editore"] = $_POST["Editore"];
+                  $arrayQ[":Editore"] = $_GET["Editore"];
                 }
-                if (!empty($_POST["Genere"])) {
+                if (!empty($_GET["Genere"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Genere)) LIKE ('%' || trim(lower(:Genere)) || '%')";
-                  $arrayQ[":Genere"] = $_POST["Genere"];
+                  $arrayQ[":Genere"] = $_GET["Genere"];
                 }
-                if (!empty($_POST["ISBN"])) {
+                if (!empty($_GET["ISBN"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(ISBN)) LIKE ('%' || trim(lower(:ISBN)) || '%')";
-                  $arrayQ[":ISBN"] = $_POST["ISBN"];
+                  $arrayQ[":ISBN"] = $_GET["ISBN"];
                 }
-                if (!empty($_POST["Inventario"])) {
+                if (!empty($_GET["Inventario"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Inventario)) LIKE ('%' || trim(lower(:Inventario)) || '%')";
-                  $arrayQ[":Inventario"] = $_POST["Inventario"];
+                  $arrayQ[":Inventario"] = $_GET["Inventario"];
                 }
-                if (!empty($_POST["Serie"])) {
+                if (!empty($_GET["Serie"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Serie)) LIKE ('%' || trim(lower(:Serie)) || '%')";
-                  $arrayQ[":Serie"] = $_POST["Serie"];
+                  $arrayQ[":Serie"] = $_GET["Serie"];
                 }
-                if (!empty($_POST["Lingua"])) {
+                if (!empty($_GET["Lingua"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= "trim(lower(Lingua)) LIKE ('%' || trim(lower(:Lingua)) || '%')";
-                  $arrayQ[":Lingua"] = $_POST["Lingua"];
+                  $arrayQ[":Lingua"] = $_GET["Lingua"];
+                }  
+               if (!empty($_GET["Dewey"])) {
+                  if (!$flag) {
+                    $flag = true;
+                  } else {
+                    $query .= " AND ";
+                  }
+                  $query .= "trim(lower(Dewey)) LIKE ('%' || trim(lower(:Dewey)) || '%')";
+                  $arrayQ[":Dewey"] = $_GET["Dewey"];
                 }
-                if (!empty($_POST["Argomento"])) {
+                if (!empty($_GET["Argomento"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " trim(lower(Argomento)) LIKE ('%' || trim(lower(:Argomento)) || '%')";
-                  $arrayQ[":Argomento"] = $_POST["Argomento"];
+                  $arrayQ[":Argomento"] = $_GET["Argomento"];
                 }
-                if ($_POST["Prestito"] == "P") {
+                if ($_GET["Prestito"] == "P") {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " Prestito='P'";
-                } elseif ($_POST["Prestito"] == "NP") {
+                } elseif ($_GET["Prestito"] == "NP") {
                   if (!$flag) {
                     $flag = true;
                   } else {
@@ -172,14 +181,14 @@ function main($pdo, $pageN)
                   }
                   $query .= " Prestito!='P'";
                 }
-                if (!empty($_POST["NPag"])) {
+                if (!empty($_GET["NPag"])) {
                   if (!$flag) {
                     $flag = true;
                   } else {
                     $query .= " AND ";
                   }
                   $query .= " NPag =:NPag";
-                  $arrayQ[":NPag"] = $_POST["NPag"];
+                  $arrayQ[":NPag"] = $_GET["NPag"];
                 }
 
                 if (!$flag) $query .= " 1=1";
@@ -196,7 +205,7 @@ function main($pdo, $pageN)
                 <div class="resultD w3-panel w3-card">
                 
                 <?php
-                $test = $_POST;
+                $test = $_GET;
                 unset($test["Letter"]);
                 unset($test["page"]);
                 unset($test["first"]);
@@ -232,6 +241,9 @@ function main($pdo, $pageN)
                 <form method="POST" action="results.php">
                 <button class="w3-btn w3-left w3-orange"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia senza restrizioni</button>
                 </form>
+                <form method="POST" action="dewey.php">
+                <button class="w3-btn w3-left w3-blue-grey"><i class="fa fa-book fa-fw w3-margin-right"></i>Sfoglia catalogo dewey</button>
+                </form>
                 </div>
                 <div class="resultD w3-panel w3-card">
                 <?php
@@ -247,9 +259,9 @@ function main($pdo, $pageN)
                     ?>
                     <form method="POST" style="display:inline;">
                      <?php
-                     $p = $_POST["page"];
-                     unset($_POST["page"]);
-                        foreach ($_POST as $key => $val) {
+                     $p = $_GET["page"];
+                     unset($_GET["page"]);
+                        foreach ($_GET as $key => $val) {
                         ?><input type="hidden" name="<?php echo htmlentities($key); ?>" value="<?php echo htmlentities($val); ?>" /><?php
                                                                                                                                   }
                     ?>
@@ -257,7 +269,7 @@ function main($pdo, $pageN)
                     <button class="w3-btn w3-blue-grey"><?php echo htmlentities($letter); ?></button>
                     </form>
                     <?php
-                    $_POST["page"] = $p;
+                    $_GET["page"] = $p;
                 }
                 ?>
                 </div>
@@ -288,6 +300,10 @@ function main($pdo, $pageN)
                         <th>ISBN</th>
                         <td><?php echo htmlentities(strlen(trim($data["ISBN"]))?$data["ISBN"]:"-"); ?></td>
                       </tr>
+                      <tr>
+                        <th>Dewey</th>
+                        <td><?php echo htmlentities(strlen(trim($data["Dewey"]))?$data["Dewey"]:"-"); ?></td>
+                      </tr>
                     </table>
                     <form action="bookDetail.php" method="GET"  target="_blank">
                       <input name="id" type="hidden" value="<?php echo $data["id"]; ?>" />
@@ -303,15 +319,15 @@ function main($pdo, $pageN)
                 ?>
                 <div class="w3-row">
                   <?php
-                  $p = (int)$_POST["page"];
-                  unset($_POST["page"]);
+                  $p = (int)$_GET["page"];
+                  unset($_GET["page"]);
                   if ($p != 0) {
                   ?>
                     <div class="w3-third">
                       <form method="POST">
                         <?php
 
-                        foreach ($_POST as $key => $val) {
+                        foreach ($_GET as $key => $val) {
                         ?><input type="hidden" name="<?php echo htmlentities($key); ?>" value="<?php echo htmlentities($val); ?>" /><?php
                                                                                                                                   }
                                                                                                                                     ?>
@@ -333,9 +349,9 @@ function main($pdo, $pageN)
                     <?php
                     if ($i != 0 && $hasNewPage) {
                     ?>
-                      <form method="POST">
+                      <form method="GET">
                         <?php
-                        foreach ($_POST as $key => $val) {
+                        foreach ($_GET as $key => $val) {
                         ?><input type="hidden" name="<?php echo htmlentities($key); ?>" value="<?php echo htmlentities($val); ?>" /><?php
                                                                                                                                   }
                                                                                                                                     ?>
@@ -416,5 +432,5 @@ function main($pdo, $pageN)
 }
 
 $dbh = new PDO('sqlite:db');
-main($dbh, $_POST["page"] ?: 0);
+main($dbh, $_GET["page"] ?: 0);
 ?>
