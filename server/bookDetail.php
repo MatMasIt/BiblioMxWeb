@@ -145,7 +145,9 @@ function bookDisplay($pdo, $id)
                       <?php if ($data["Inventario"]) { ?><tr class="w3-light-grey"><th>Inventario</th><td><?php echo htmlentities($data["Inventario"]); ?></td></tr class="w3-light-grey"><?php } ?>
                       <?php if ($data["NPag"]) { ?><tr class="w3-light-grey"><th>Numero di Pagine</th><td><?php echo htmlentities($data["NPag"]); ?></td></tr class="w3-light-grey"><?php } ?>
                       <?php if ($data["Lvlbibliogr"]) { ?><tr class="w3-light-grey"><th>Livello Bibliografico</th><td><?php echo htmlentities($data["Lvlbibliogr"]); ?></td> </tr class="w3-light-grey"><?php } ?>
-                      <?php if ($data["Dewey"]) { ?><tr class="w3-light-grey"><th>Dewey</th><td><?php echo htmlentities($data["Dewey"]); ?></td></tr class="w3-light-grey"><?php } ?>
+                      <?php if ($data["Dewey"]) { ?><tr class="w3-light-grey"><th>Dewey</th><td><?php echo htmlentities($data["Dewey"]); ?>
+                      <br /><a href="https://www.liceococito.edu.it/bibliotecaWeb/dewey.php#L<?php echo $data["id"];?>" target="_blank">Esplora nel catalogo Dewey</a>
+                      </td></tr class="w3-light-grey"><?php } ?>
                       <?php if ($data["Paesepubblicaz"]) { ?><tr class="w3-light-grey"><th>Paese di pubblicazione</th><td><?php echo htmlentities($data["Paesepubblicaz"]); ?></td></tr class="w3-light-grey"><?php } ?>
                       <?php if ($data["Luogoeditore"]) { ?><tr class="w3-light-grey"><th>Luogo editore</th><td><?php echo htmlentities($data["Luogoeditore"]); ?></td></tr class="w3-light-grey"><?php } ?>
                       <?php if ($data["Curatore"]) { ?><tr class="w3-light-grey"><th>Curatore</th><td><?php echo htmlentities($data["Curatore"]); ?></td></tr class="w3-light-grey"><?php } ?>
